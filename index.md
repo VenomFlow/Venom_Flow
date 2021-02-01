@@ -21,18 +21,18 @@ Programs used in developing VenomFlow:
 After installing Doocker, ensure that you have have the supported version of Docker by using:
 
 ```
-'docker --version'
+docker --version
 ```
 
 In order to see the list of running containers use:
 ```
-'docker ps'
+docker ps
 ```
 
 The next step is to create Docker file.Through Dockerfile you can define what goes into the container that builds Docker image. (Image has all the needed dependencies for the application). First, create project directory with file names Dockerfile and paste the following:
 
 ```
-'. /code RUN pip install -r requirements.txt CMD ["python", "app.py]'
+. /code RUN pip install -r requirements.txt CMD ["python", "app.py]
 ```
 
 For more guidance in installing Docker file please click [here](https://docs.docker.com/engine/reference/builder/)
@@ -44,18 +44,22 @@ We based our docker image following bgruening instructions that already contains
 After creation of Docker image and the appropriate dockerfile, you can run the image by using:
 
 ```
-'docker run -v {your project location}:/export -itp {your IP+your choice of web tag number} {your repository ID}:Tag startup'
+docker run -v {your project location}:/export -itp {your IP+your choice of web tag number} {your repository ID}:Tag startup
 ```
 
 When the image running, the web browser can run with the IP and the web tag number. For example:
 
 ```
-'146.95.252.87.8092'
+146.95.252.87.8092
 ```
 
 To access VenomFlow pipeline, simply run 8082 web tag with you IP adress and use 'admin' for Username and 'admin' for Password.
 
 When logged in, please go to 'Workflow' and run 'Venomic_1a' pipeline. Every step can be altered to specific set of parameters or data sets. 
 
-To save the changes you made to the image you would need to do two things: to commit to the changes (with a new tag) and to use ‘push’ the save. Therefore, firstly you would use '#commitID user/repotag:tagname' and to push your work: 'Docker push'
+To save the changes you made to the image you would need to do two things: to commit to the changes (with a new tag) and to use ‘push’ the save. Therefore, firstly you would use:
+
+```
+#commitID user/repotag:tagname' and to push your work: 'Docker push
+```
 
