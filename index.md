@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## VenomFlow instruction manual
 
-You can use the [editor on GitHub](https://github.com/VenomFlow/Venom_Flow/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [Galaxy Docker Image GitHub page](https://github.com/bgruening/docker-galaxy-stable) to review more information on how to install and maintain Galaxy Docker Images.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
