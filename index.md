@@ -60,6 +60,11 @@ When logged in, please go to 'Workflow' and run 'Venomic_1a' pipeline. Every ste
 To save the changes you made to the image you would need to do two things: to commit to the changes (with a new tag) and to use ‘push’ the save. Therefore, firstly you would use:
 
 ```
-#commitID user/repotag:tagname' and to push your work: 'Docker push
+#commitID user/repotag:tagname 
 ```
 
+and to push your work:
+
+```
+Docker push
+```
