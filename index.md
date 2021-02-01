@@ -63,7 +63,7 @@ To save the changes you made to the image you would need to do two things: to co
 #commitID user/repotag:tagname 
 ```
 
-and to push your work:
+And to push your work:
 
 ```
 Docker push
