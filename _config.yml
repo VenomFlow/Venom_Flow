@@ -12,13 +12,13 @@ Programs used in developing VenomFlow:
 
 ## Understanding Docker 
 
-[Docker](https://www.docker.com/get-started) is a platfrom that uses containers to develop, deploy and run applications. The use of the containers make the project lighter and flexible. In order to lunch each container, it runs an image which has everything that is needed for a container to run. In summary, a container is a runtime of an image, and each image becomes an individual memory of the container.
+[Docker](https://www.docker.com/get-started) is a platfrom that uses containers to develop, deploy, and run applications. The use of the containers makes the project lighter and more flexible. In order to launch each container, it runs an image which has everything that is needed for a container to run. In summary, a container is a runtime of an image, and each image becomes an individual memory of the container.
 
 - Docker needs to be installed before accessing VenomFlow 
 
 ### Testing and Running Docker Image 
 
-After installing Doocker, ensure that you have have the supported version of Docker by using:
+After installing Docker, ensure that you have the supported version of Docker by using:
 
 ```
 docker --version
@@ -29,17 +29,17 @@ In order to see the list of running containers use:
 docker ps
 ```
 
-The next step is to create Docker file.Through Dockerfile you can define what goes into the container that builds Docker image. (Image has all the needed dependencies for the application). First, create project directory with file names Dockerfile and paste the following:
+The next step is to create Docker file. Through Dockerfile you can define what goes into the container that builds Docker image. (Image has all the needed dependencies for the application). First, create project directory with file names Dockerfile and paste the following:
 
 ```
-. /code RUN pip install -r requirements.txt CMD ["python", "app.py]
+. /code RUN pip install -r requirements.txt CMD ["python", "app.py"]
 ```
 
 For more guidance in installing Docker file please click [here](https://docs.docker.com/engine/reference/builder/)
 
 **Creating Docker Image**
 
-We based our docker image following bgruening instructions that already contains [full-fledged Galaxy installation](https://github.com/bgruening/docker-galaxy-stable)
+We based our docker image on the instructions written by bgruening containing [full-fledged Galaxy installation](https://github.com/bgruening/docker-galaxy-stable)
 
 After creation of Docker image and the appropriate dockerfile, you can run the image by using:
 
@@ -47,7 +47,7 @@ After creation of Docker image and the appropriate dockerfile, you can run the i
 docker run -v {your project location}:/export -itp {your IP+your choice of web tag number} {your repository ID}:Tag startup
 ```
 
-When the image running, the web browser can run with the IP and the web tag number. For example:
+When the image is running, the web browser can run with the IP and the web tag number. For example:
 
 ```
 146.95.252.87.8092
